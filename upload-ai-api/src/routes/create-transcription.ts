@@ -1,6 +1,6 @@
 import { FastifyInstance } from "fastify"
 import { prisma } from "../lib/prisma"
-import { openai } from "../lib/openai"
+import { openaiEnv } from "../lib/openai"
 import { createReadStream } from "node:fs"
 import { z } from "zod"
 
@@ -27,7 +27,7 @@ export async function createTranscriptionRoute(app: FastifyInstance) {
     const videoPath = video.path
     const audioReadStream = createReadStream(videoPath)
 
-    const response = await openai.audio.transcriptions.create({
+    const response = await openaiEnv.audio.transcriptions.create({
       file: audioReadStream,
       model: "whisper-1",
       language: 'pt',
