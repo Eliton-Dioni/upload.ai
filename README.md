@@ -60,7 +60,7 @@ $ npm run dev
 Feito com ☕ by Eliton Dioni 👋🏾
 
 <div style="display: flex;"> 
-  <a href="[https://www.linkedin.com/in/seu-linkedin](https://www.linkedin.com/in/eliton-dioni/)" target="_blank">
+  <a href="https://www.linkedin.com/in/eliton-dioni/" target="_blank">
     <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" style="margin-right: 2vw" target="_blank">
   </a> 
   <a href="mailto:elitondioni.silva@gmail.com">
